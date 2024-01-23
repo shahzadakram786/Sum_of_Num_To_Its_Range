@@ -12,6 +12,9 @@ btnC.addEventListener('click', () => {
     ]
     for (let i = 0; i < inputVlaues.length; i++) {
         for (let j = 0; j < inputVlaues.length; j++) {
+            if () {
+
+            }
 
         }
 
