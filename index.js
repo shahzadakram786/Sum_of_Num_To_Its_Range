@@ -24,9 +24,42 @@ btnC.addEventListener('click', () => {
 
 })
 
+// from this point below code is seprate
+
+
+
+
+
+
+
+let U_input1 = document.getElementById("task2input1");
+let U_butn = document.getElementById("task2Btn");
+let U_para = document.getElementById("ulatpara");
+
+
+
+
+
+
+
+
+
+let str = "hi";
+for (let i = 0; i <= str.length; i++) {
+    for (let j = 0; j <= str.length; j++) {
+        let str2 = str[j];
+        // str = str[1, 0]
+        str = str[1] + str[0];
+
+
+    }
+
+}
+console.log(str)
 
 // let num = 1
 // let numS = 10;
+// let sumall = "",
 // for (let i = 0; i < num.length; i++) {
 //     for (let j = 0; j < numS.length; i++) {
 //         console.log(num)
