@@ -10,19 +10,18 @@ btnC.addEventListener('click', () => {
     let inputRange = parseFloat(input2.value);
     let sum = 0;
 
-    if () {
-        for (let i = 0; i < inputValue.length; i++) {
+    for (let i = 0; i <= inputValue; i++) {
 
-            for (let j = 0; j <= inputRange.length; j++) {
+        for (let j = 0; j <= inputRange; j++) {
 
-                sum += i + j
-            }
-
+            sum += i + j
         }
-        para.innerHTML = `sum is ${sum}`;
-        console.log(sum)
 
     }
+    para.innerHTML = `sum is ${sum}`;
+    console.log(sum)
+
+
 })
 
 
