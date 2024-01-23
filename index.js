@@ -6,14 +6,21 @@ let para = document.getElementById("prgrph")
 
 
 btnC.addEventListener('click', () => {
-    let inputVlaues = [
-        parseFloat(input1.value),
-        parseFloat(input2.value)
-    ]
-    for (let i = 0; i < input1.length; i++) {
-        for (let j = 0; j < input2.length; j++) {
-            console.log()
+    let inputValue = parseFloat(input1.value);
+    let inputRange = parseFloat(input2.value);
+    let sum = 0;
+
+    if () {
+        for (let i = 0; i < inputValue.length; i++) {
+
+            for (let j = 0; j <= inputRange.length; j++) {
+
+                sum += i + j
+            }
+
         }
+        para.innerHTML = `sum is ${sum}`;
+        console.log(sum)
 
     }
 })
@@ -40,13 +47,13 @@ btnC.addEventListener('click', () => {
 // console.log(num2)
 
 
-let num2 = 3;
-let range = 5;
+// let num2 = 3;
+// let range = 5;
 
-for (let i = 0; i < num2; i++) {
-    let sum = 0;
-    for (let j = 0; j <= range; j++) {
-        sum += i + 1 + i + 2 + i + 3;
-    }
-    console.log("Sum for i =", i, "is:", sum);
-}
+// for (let i = 0; i < num2; i++) {
+//     let sum = 0;
+//     for (let j = 0; j <= range; j++) {
+//         sum += i + 1 + i + 2 + i + 3 + i + 4 + i + 5;
+//     }
+//     console.log("Sum for i =", i, "is:", sum);
+// }
