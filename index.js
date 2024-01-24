@@ -10,12 +10,13 @@ btnC.addEventListener('click', () => {
     let inputRange = parseFloat(input2.value);
     let sum = 0;
 
-    for (let i = 0; i <= inputValue; i++) {
+    for (let i = inputValue; i <= inputRange; i++) {
 
-        for (let j = 0; j <= inputRange; j++) {
+        // for (let j = 0; j <= inputRange; j++) {
 
-            sum += i + j
-        }
+        sum += i;
+        // }
+
 
     }
     para.innerHTML = `sum is ${sum}`;
@@ -43,7 +44,8 @@ U_butn.addEventListener('click', () => {
     let inputT2 = U_input1.value;
     let tempT2 = "";
     for (let i = inputT2.length - 1; i >= 0; i--) {
-        tempT2 += inputT2[i]
+        tempT2 += inputT2[i];
+        console.log('here is ', inputT2[i])
 
     }
     U_para.innerHTML = `Here is your word: ${tempT2} `;
@@ -61,9 +63,10 @@ U_butn.addEventListener('click', () => {
 U_butn2.addEventListener('click', () => {
     let inputT2 = U_input1.value;
     let tempT3 = "";
-    tempT3 = [inputT2[3], inputT2[2], inputT2[1], inputT2y[0]];
+    tempT3 = [inputT2[4], inputT2[3], inputT2[2], inputT2[1], inputT2[0]];
 
-    console.log(tempT3)
+    console.log(tempT3);
+    para.innerHTML = `here is you output ${tempT3}`
 
 })
 
