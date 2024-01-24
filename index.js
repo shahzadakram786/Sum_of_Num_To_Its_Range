@@ -65,6 +65,16 @@ U_butn.addEventListener('click', () => {
 
 
 
+//another type for text mirrioring
+let x = [1, 2, 3];
+[x[2], x[0]] = [x[0], x[2]];
+console.log('x =', x)
+
+
+
+let y = "helo";
+[y[3], y[2], y[1], y[0]] = [y[0], y[1], y[2], y[3]];
+console.log('y =', y)
 
 
 
