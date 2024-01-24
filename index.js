@@ -35,6 +35,7 @@ btnC.addEventListener('click', () => {
 let U_input1 = document.getElementById("task2input1");
 let U_butn = document.getElementById("task2Btn");
 let U_para = document.getElementById("ulatpara");
+let U_butn2 = document.getElementById("task2Btn2")
 
 
 
@@ -45,7 +46,7 @@ U_butn.addEventListener('click', () => {
         tempT2 += inputT2[i]
 
     }
-    U_para.innerHTML = tempT2;
+    U_para.innerHTML = `Here is your word: ${tempT2} `;
 
 
     // for (let i = 0; i < inputT2.length; i++) {
@@ -55,26 +56,31 @@ U_butn.addEventListener('click', () => {
 
     //     }
 
-
-
-
-
 });
 
+U_butn2.addEventListener('click', () => {
+    let inputT2 = U_input1.value;
+    let tempT3 = "";
+    tempT3 = [inputT2[3], inputT2[2], inputT2[1], inputT2y[0]];
 
+    console.log(tempT3)
+
+})
 
 
 
 //another type for text mirrioring
-let x = [1, 2, 3];
-[x[2], x[0]] = [x[0], x[2]];
+let x = [1, 2, 4];
+x.splice(2, 0, 3);
 console.log('x =', x)
+    // [x[2], x[0]] = [x[0], x[2]];
+    // console.log('x =', x)
 
 
 
 let y = "helo";
-[y[3], y[2], y[1], y[0]] = [y[0], y[1], y[2], y[3]];
-console.log('y =', y)
+let z = [y[3], y[2], y[1], y[0]];
+console.log('z =', z)
 
 
 
