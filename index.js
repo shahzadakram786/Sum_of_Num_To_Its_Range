@@ -6,15 +6,15 @@ let para = document.getElementById("prgrph")
 
 
 btnC.addEventListener('click', () => {
-    let inputValue = parseFloat(input1.value);
-    let inputRange = parseFloat(input2.value);
+    let inputValue = parseInt(input1.value);
+    let inputRange = parseInt(input2.value);
     let sum = 0;
 
     for (let i = inputValue; i <= inputRange; i++) {
 
         // for (let j = 0; j <= inputRange; j++) {
 
-        sum += i;
+        sum = sum + i;
         // }
 
 
@@ -136,4 +136,19 @@ console.log('z =', z)
 //         sum += i + 1 + i + 2 + i + 3 + i + 4 + i + 5;
 //     }
 //     console.log("Sum for i =", i, "is:", sum);
-// }
+
+
+
+
+// test 1 from here
+
+
+const num = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+let sum = "";
+for (let i = 0; i < num.length; i++) {
+    for (let j = 0; j < num.length; j++) {
+        sum = num[i] + num[j]
+        if (num[i] + num[j] === 10) {}
+    }
+}
+console.log("sum", sum);
