@@ -143,12 +143,21 @@ console.log('z =', z)
 // test 1 from here
 
 
+
+let paraTst = document.getElementById("paraTest");
+
+
 const num = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+let combinators = "";
 let sum = "";
 for (let i = 0; i < num.length; i++) {
     for (let j = 0; j < num.length; j++) {
         sum = num[i] + num[j]
-        if (num[i] + num[j] === 10) {}
+        if (num[i] + num[j] === 10) {
+
+            paraTst.innerHTML += `${num[i]} + ${num[j]} =  ${sum} <br>`
+            combinators++
+        }
     }
 }
-console.log("sum", sum);
+paraTst.innerHTML += `total combinators are = ${combinators} `;
