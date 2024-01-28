@@ -161,3 +161,20 @@ for (let i = 0; i < num.length; i++) {
     }
 }
 paraTst.innerHTML += `total combinators are = ${combinators} `;
+
+
+
+
+const str = "A quick brown fox jumps on a lazy dog";
+let tsum = 0
+
+function total() {
+    for (let i = 0; i < str.length; i++) {
+        tsum = str.length;
+
+    }
+
+    // return total()
+}
+console.log("here are them ", tsum)
+    // total()
