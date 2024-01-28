@@ -172,17 +172,22 @@ function total() {
     for (let i = 0; i < str.length; i++) {
         for (let j = 0; j < str.length; j++) {
             if (str[i].length > str[j].length + 1) {
-                tsum = str[j];
-                num[j] = num[j + 1];
-                num[j + 1] = tsum;
+                let tsum = str[j].length;
+                num[j].length = num[j + 1].length;
+                num[j + 1].length = tsum;
+
+
             }
 
+
         }
-        // tsum = str.length;
+
 
     }
 
     // return total()
 }
 console.log("here are them ", tsum)
+total()
+    // console.log("tsum);
     // total()
