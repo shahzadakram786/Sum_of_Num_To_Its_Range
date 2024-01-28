@@ -170,7 +170,15 @@ let tsum = 0
 
 function total() {
     for (let i = 0; i < str.length; i++) {
-        tsum = str.length;
+        for (let j = 0; j < str.length; j++) {
+            if (str[i].length > str[j].length + 1) {
+                tsum = str[j];
+                num[j] = num[j + 1];
+                num[j + 1] = tsum;
+            }
+
+        }
+        // tsum = str.length;
 
     }
 
